@@ -7,8 +7,7 @@ defmodule Rumbl.Repo.Migrations.CreateUser do
         add :username, :string, null: false
         add :password_hash, :string
 
-        add :created_at, :timestamp, null: false, default: fragment("now()")
-        add :updated_at, :timestamp, null: false, default: fragment("now()")
+        timestamps default: fragment("now()")
     end
 
     create  unique_index :users, [:username]
