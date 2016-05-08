@@ -39,5 +39,5 @@ config :rumbl, Rumbl.Repo,
   password: "postgres!123",
   database: "rumbl_dev",
   hostname: "192.168.99.100",
-  port: "32769",
+  port: "32772",
   pool_size: 10
