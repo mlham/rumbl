@@ -19,7 +19,7 @@ defmodule Rumbl.Mixfile do
   def application do
     [mod: {Rumbl, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,8 @@ defmodule Rumbl.Mixfile do
      {:cowboy, "~> 1.0"},
      {:phoenix_calendar, "~> 0.1.2"},
      {:calecto, "~> 0.5.2"},
-     {:calendar, "~> 0.13"}]
+     {:calendar, "~> 0.13"},
+     {:comeonin, "~> 2.0"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
